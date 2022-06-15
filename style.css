@@ -6,9 +6,12 @@
     text-decoration: none;
 }
 
+
+/* header section */
+
 .header {
-    background-color: grey;
-    padding: 15px 0;
+    /* background-color: rgb(11, 85, 138); */
+    padding: 35px 0;
     position: fixed;
     width: 100%;
     /* z-index: 99; */
@@ -16,7 +19,7 @@
 }
 
 .container {
-    max-width: 1500px;
+    max-width: 70%;
     padding: 0px 80px;
     margin: auto;
 }
@@ -28,8 +31,13 @@
 }
 
 .header .logo a {
-    font-size: 35px;
+    color: beige;
+    font-size: 55px;
     font-weight: 600;
+}
+
+.header .logo a span {
+    color: rgb(38, 38, 41);
 }
 
 .header .menu li {
@@ -38,8 +46,53 @@
 }
 
 .header .menu li a {
-    color: #000;
-    font-size: 30px;
+    color: rgb(23, 23, 21);
+    font-size: 35px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 45px;
+    transition: color 0.3s ease;
+}
+
+.header .menu li a:hover {
+    color: brown;
+}
+
+
+/* home section */
+
+.home {
+    display: flex;
+    background: url("banner.webp") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 500px;
+    color: beige;
+}
+
+.home .home-cont {
+    margin: auto 0 auto 40px;
+    max-width: 1500px;
+    padding: 0px 80px;
+}
+
+.home .home-cont .text-1 {
+    font-size: 40px;
+}
+
+.home .home-cont .text-2 {
+    font-size: 100px;
+    font-weight: 600;
+    /* margin-left: -3px; */
+}
+
+.home .home-cont .text-3 {
+    font-size: 60px;
+    margin: 5px 0;
+}
+
+.home .home-cont .text-3 span {
+    color: rgb(38, 38, 41);
+    font-weight: 600;
 }
