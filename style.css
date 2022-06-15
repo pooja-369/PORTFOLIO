@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header {
+    background-color: grey;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    /* z-index: 99; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0px 80px;
+    margin: auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo a {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.header .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header .menu li a {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 25px;
+}
