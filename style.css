@@ -18,6 +18,11 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+.navbar .sticky {
+    padding: 35px 0;
+    background: red;
+}
+
 .container {
     max-width: 70%;
     padding: 0px 80px;
@@ -54,7 +59,19 @@
 }
 
 .header .menu li a:hover {
-    color: brown;
+    color: rgb(245, 16, 16);
+}
+
+
+/* menu button styling */
+
+.menu2 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+    cursor: pointer;
 }
 
 
@@ -96,3 +113,8 @@
     color: rgb(38, 38, 41);
     font-weight: 600;
 }
+
+
+/* responsive media query */
+
+@media (max-width:991px) {}
