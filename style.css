@@ -1,274 +1,298 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300&family=Ubuntu:wght@400;500;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-
-/* header section */
-
-.header {
-    background-color: rgb(11, 85, 138);
-    padding: 35px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.navbar .sticky {
-    padding: 35px 0;
-    background: red;
-}
-
-.container {
-    max-width: 70%;
-    padding: 0px 80px;
-    margin: auto;
-}
-
-.header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header .logo a {
-    color: beige;
-    font-size: 55px;
-    font-weight: 600;
-}
-
-.header .logo a span {
-    color: rgb(38, 38, 41);
-}
-
-.header .menu li {
-    list-style: none;
-    display: inline-block;
-}
-
-.header .menu li a {
-    color: rgb(23, 23, 21);
-    font-size: 35px;
-    font-weight: 500;
-    margin-left: 45px;
-    transition: color 0.3s ease;
-}
-
-.header .menu li a:hover {
-    color: rgb(245, 16, 16);
-}
-
-
-/* menu button styling */
-
-.menu2 {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    display: none;
-    cursor: pointer;
-}
-
-
-/* home section */
-
-.home {
-    display: flex;
-    background: url("banner.webp") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    font-family: 'Ubuntu', sans-serif;
-    min-height: 500px;
-    color: beige;
-}
-
-.home .home-cont {
-    margin: auto 0 auto 40px;
-    max-width: 1500px;
-    padding: 0px 80px;
-}
-
-.home .home-cont .text-1 {
-    font-size: 40px;
-}
-
-.home .home-cont .text-2 {
-    font-size: 100px;
-    font-weight: 600;
-    /* margin-left: -3px; */
-}
-
-.home .home-cont .text-3 {
-    font-size: 60px;
-    margin: 5px 0;
-}
-
-.home .home-cont .text-3 span {
-    color: rgb(38, 38, 41);
-    font-weight: 600;
-}
-
-
-/* about us section  */
-
-.about {
-    font-family: 'poppins', sans-serif;
-    padding: 100px 0;
-    font-size: 30px;
-    padding: 0px 150px;
-    margin-top: 55px;
-    /* max-width: 1500px; */
-}
-
-.about .title {
-    position: relative;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 70px;
-    font-weight: 600;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-}
-
-.about .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 200px;
-    height: 5px;
-    background: #000;
-    transform: translateX(-50%);
-}
-
-.about .title::after {
-    content: "who i am";
-    position: absolute;
-    bottom: -16px;
-    left: 50%;
-    color: crimson;
-    font-size: 30px;
-    padding: 5px;
-    background: white;
-    transform: translateX(-50%);
-}
-
-.about .about-cont {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.about .about-cont .right {
-    width: 55%;
-    padding: 2px 90px 2px;
-}
-
-.about .about-cont .right .text {
-    font-size: 35px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.about .about-cont .right .text span {
-    color: red;
-}
-
-.about .about-cont .right p {
-    text-align: justify;
-}
-
-.about .about-cont .right a {
-    display: inline-block;
-    background: crimson;
-    color: white;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-}
-
-.about .about-cont .left img {
-    height: 600px;
-    width: 800px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-/* responsive media query */
-
-@media (max-width:1498px) {
-    .container {
-        padding: 0px 80px;
-    }
-    .menu-btn {
-        color: black;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 20px 20px;
-        margin: 20px 20px 20px;
-        margin: 0px 111px 0px 3px;
-        cursor: pointer;
-        transaction: all 0.3s ease;
-    }
-    .menu2 {
-        z-index: 999;
-        display: inline-block;
-    }
-    .header .menu {
-        position: fixed;
-        /* background: rgb(60, 54, 54); */
-        background: white;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        text-align: center;
-        padding-top: 80px;
-    }
-    .header .menu .active {
-        left: 0%;
-    }
-    .header .menu li {
-        display: block;
-    }
-    .header .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 35px;
-    }
-}
-
-@media (max-width:2028px) {
-    .container {
-        max-width: 100%;
-    }
-}
-
-@media (max-width:827px) {
-    .home .home-cont {
-        margin: auto 0 auto 20px;
-        /* max-width: 1500px; */
-        padding: 0px 30px;
-    }
-    .home .home-cont .text-1 {
-        font-size: 40px;
-    }
-    .home .home-cont .text-2 {
-        font-size: 70px;
-        font-weight: 600;
-        /* margin-left: -3px; */
-    }
-    .home .home-cont .text-3 {
-        font-size: 40px;
-        margin: 5px 0;
-    }
-}
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300&family=Ubuntu:wght@400;500;700&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            /* header section */
+            
+            .header {
+                background-color: rgb(11, 85, 138);
+                padding: 35px 0;
+                position: fixed;
+                width: 100%;
+                z-index: 999;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            
+            .navbar .sticky {
+                padding: 35px 0;
+                background: red;
+            }
+            
+            .container {
+                max-width: 70%;
+                padding: 0px 80px;
+                margin: auto;
+            }
+            
+            .header .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .header .logo a {
+                color: beige;
+                font-size: 55px;
+                font-weight: 600;
+            }
+            
+            .header .logo a span {
+                color: rgb(38, 38, 41);
+            }
+            
+            .header .menu li {
+                list-style: none;
+                display: inline-block;
+            }
+            
+            .header .menu li a {
+                color: rgb(23, 23, 21);
+                font-size: 35px;
+                font-weight: 500;
+                margin-left: 45px;
+                transition: color 0.3s ease;
+            }
+            
+            .header .menu li a:hover {
+                color: rgb(245, 16, 16);
+            }
+            /* menu button styling */
+            
+            .menu2 {
+                width: 35px;
+                height: 5px;
+                background-color: black;
+                margin: 6px 0;
+                display: none;
+                cursor: pointer;
+            }
+            /* home section */
+            
+            .home {
+                display: flex;
+                background: url("banner.webp") no-repeat center;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 100vh;
+                font-family: 'Ubuntu', sans-serif;
+                min-height: 500px;
+                color: beige;
+            }
+            
+            .home .home-cont {
+                margin: auto 0 auto 40px;
+                max-width: 1500px;
+                padding: 0px 80px;
+            }
+            
+            .home .home-cont .text-1 {
+                font-size: 40px;
+            }
+            
+            .home .home-cont .text-2 {
+                font-size: 100px;
+                font-weight: 600;
+                /* margin-left: -3px; */
+            }
+            
+            .home .home-cont .text-3 {
+                font-size: 60px;
+                margin: 5px 0;
+            }
+            
+            .home .home-cont .text-3 span {
+                color: rgb(38, 38, 41);
+                font-weight: 600;
+            }
+            /* about us section  */
+            
+            .about {
+                font-family: 'poppins', sans-serif;
+                padding: 100px 0;
+                font-size: 30px;
+                padding: 0px 150px;
+                margin-top: 55px;
+                /* max-width: 1500px; */
+            }
+            
+            .title {
+                position: relative;
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 70px;
+                font-weight: 600;
+                margin-bottom: 60px;
+                padding-bottom: 20px;
+            }
+            
+            .title::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 200px;
+                height: 5px;
+                background: #000;
+                transform: translateX(-50%);
+            }
+            
+            .title::after {
+                /* content: "who i am"; */
+                position: absolute;
+                bottom: -16px;
+                left: 50%;
+                color: crimson;
+                font-size: 30px;
+                padding: 5px;
+                background: white;
+                transform: translateX(-50%);
+            }
+            
+            .about .about-cont {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            .about .about-cont .right {
+                width: 55%;
+                padding: 2px 90px 2px;
+            }
+            
+            .about .about-cont .right .text {
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            
+            .about .about-cont .right .text span {
+                color: red;
+            }
+            
+            .about .about-cont .right p {
+                /* text-align: justify; */
+            }
+            
+            .about .about-cont .right a {
+                display: inline-block;
+                background: crimson;
+                color: white;
+                font-weight: 600;
+                font-size: 25px;
+                padding: 12px 36px;
+                margin-top: 20px;
+                border-radius: 6px;
+            }
+            
+            .about .about-cont .right a:hover {
+                background: none;
+                color: crimson;
+                border: 2px solid red;
+            }
+            
+            .about .about-cont .left img {
+                height: 600px;
+                width: 800px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            /* skills section styling  */
+            /* responsive media query */
+            
+            @media (max-width:764px) {
+                .about {
+                    padding: 0px 41px;
+                }
+            }
+            
+            @media (max-width:827px) {
+                .home .home-cont {
+                    margin: auto 0 auto 20px;
+                    /* max-width: 1500px; */
+                    padding: 0px 30px;
+                }
+                .home .home-cont .text-1 {
+                    font-size: 40px;
+                }
+                .home .home-cont .text-2 {
+                    font-size: 70px;
+                    font-weight: 600;
+                    /* margin-left: -3px; */
+                }
+                .home .home-cont .text-3 {
+                    font-size: 40px;
+                    margin: 5px 0;
+                }
+            }
+            
+            @media (max-width:1278px) {
+                .about .about-cont .left img {
+                    height: 496px;
+                    width: 436px;
+                }
+            }
+            
+            @media (max-width:1498px) {
+                .container {
+                    padding: 0px 80px;
+                }
+                .menu-btn {
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 20px 20px;
+                    margin: 20px 20px 20px;
+                    margin: 0px 111px 0px 3px;
+                    cursor: pointer;
+                    transaction: all 0.3s ease;
+                }
+                .menu2 {
+                    z-index: 999;
+                    display: inline-block;
+                }
+                .header .menu {
+                    position: fixed;
+                    /* background: rgb(60, 54, 54); */
+                    background: white;
+                    height: 100vh;
+                    width: 100%;
+                    left: -100%;
+                    top: 0;
+                    text-align: center;
+                    padding-top: 80px;
+                }
+                .header .menu .active {
+                    left: 0%;
+                }
+                .header .menu li {
+                    display: block;
+                }
+                .header .menu li a {
+                    display: inline-block;
+                    margin: 20px 0;
+                    font-size: 35px;
+                }
+            }
+            
+            @media (max-width:1598px) {
+                .about .about-cont .right {
+                    width: 90%;
+                    padding: 0px 0px 2px;
+                }
+            }
+            
+            @media (max-width:2028px) {
+                .container {
+                    max-width: 100%;
+                }
+                .about .about-cont .left img {
+                    height: 542px;
+                    width: 555px;
+                    /* object-fit: cover; */
+                    border-radius: 10px;
+                }
+            }
