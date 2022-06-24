@@ -36,7 +36,7 @@
                 .header .logo a {
                     color: beige;
                     font-size: 25px;
-                    font-weight: 600;
+                    font-weight: 400;
                 }
                 
                 .header .logo a span {
@@ -307,6 +307,7 @@
                 .expertise .right .info {
                     display: flex;
                     justify-content: space-between;
+                    font-size: 25px;
                 }
                 
                 .expertise .right .line {
@@ -328,7 +329,16 @@
                 
                 @media (max-width:615px) {
                     .about .about-cont .left img {
-                        border-radius: 50%;
+                        display: none;
+                    }
+                    .skills .skills-content .right img {
+                        display: none;
+                    }
+                    .skills-content .left {
+                        margin-bottom: 0px;
+                    }
+                    .text {
+                        font-size: 43px;
                     }
                 }
                 
