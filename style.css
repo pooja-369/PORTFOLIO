@@ -9,7 +9,7 @@
                 
                 .header {
                     background-color: rgb(26, 27, 27);
-                    padding: 15px 0;
+                    padding: 29px 0;
                     position: fixed;
                     width: 100%;
                     z-index: 999;
@@ -114,7 +114,7 @@
                 .about {
                     font-family: 'poppins', sans-serif;
                     padding: 100px 0;
-                    font-size: 20px;
+                    font-size: 30px;
                     padding: 60px 80px;
                     /* margin-top: 55px; */
                     /* margin-bottom: 30px; */
@@ -325,12 +325,73 @@
                     top: 0;
                     color: rgb(244, 224, 228);
                 }
+                
+                .footer-basic {
+                    padding: 40px 0;
+                    /* background-color: #ffffff; */
+                    background-color: #000000;
+                    background-image: linear-gradient(315deg, #000000 0%, #181616 74%);
+                    color: #dee5ec;
+                }
+                
+                .footer-basic ul {
+                    padding: 0;
+                    list-style: none;
+                    text-align: center;
+                    font-size: 38px;
+                    line-height: 1.6;
+                    margin-bottom: 0;
+                }
+                
+                .footer-basic li {
+                    padding: 0 10px;
+                }
+                
+                .footer-basic ul a {
+                    color: inherit;
+                    text-decoration: none;
+                    opacity: 0.8;
+                }
+                
+                .footer-basic ul a:hover {
+                    opacity: 1;
+                }
+                
+                .footer-basic .social {
+                    text-align: center;
+                    padding-bottom: 25px;
+                }
+                
+                .footer-basic .social>a {
+                    font-size: 24px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    margin: 0 8px;
+                    color: inherit;
+                    opacity: 0.75;
+                }
+                
+                .footer-basic .social>a:hover {
+                    opacity: 0.9;
+                }
+                
+                .footer-basic .copyright {
+                    margin-top: 15px;
+                    text-align: center;
+                    font-size: 13px;
+                    color: #aaa;
+                    margin-bottom: 0;
+                }
                 /* responsive media query */
                 
                 @media (max-width:615px) {
                     .about .about-cont .left img {
                         display: none;
-<<<<<<< HEAD
                     }
                     .skills .skills-content .right img {
                         display: none;
@@ -340,14 +401,36 @@
                     }
                     .text {
                         font-size: 43px;
-=======
->>>>>>> f36862e285cc7e54b329aa16bfd967261f324e6a
                     }
                 }
                 
                 @media (max-width:764px) {
                     .about {
                         padding: 0px 41px;
+                    }
+                    .header .container .logo a {
+                        font-size: 42px;
+                    }
+                    .menu-btn .menu2 {
+                        display: none;
+                    }
+                }
+                
+                @media (max-width:586px) {
+                    .home {
+                        width: 151%;
+                    }
+                    .about {
+                        width: 151%;
+                    }
+                    .skills {
+                        width: 151%;
+                    }
+                    .expertise {
+                        width: 151%;
+                    }
+                    .footer-basic {
+                        width: 151%;
                     }
                 }
                 
@@ -371,6 +454,9 @@
                     }
                     .title::before {
                         display: none;
+                    }
+                    .expertise .right {
+                        width: 100%;
                     }
                 }
                 
