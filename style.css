@@ -330,6 +330,7 @@
                 @media (max-width:615px) {
                     .about .about-cont .left img {
                         display: none;
+<<<<<<< HEAD
                     }
                     .skills .skills-content .right img {
                         display: none;
@@ -339,6 +340,8 @@
                     }
                     .text {
                         font-size: 43px;
+=======
+>>>>>>> f36862e285cc7e54b329aa16bfd967261f324e6a
                     }
                 }
                 
