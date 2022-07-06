@@ -284,6 +284,10 @@
                     width: 20%;
                 }
                 
+                .skills .skills-content .right img {
+                    width: 100%;
+                }
+                
                 .expertise {
                     padding: 60px 80px;
                     font-family: 'poppins', sans-serif;
@@ -324,6 +328,23 @@
                     left: 0;
                     top: 0;
                     color: rgb(244, 224, 228);
+                }
+                
+                .heading {
+                    text-align: center;
+                    position: relative;
+                    font-family: 'poppins', sans-serif;
+                }
+                
+                .heading h1 {
+                    color: white;
+                    font-size: 70px;
+                    font-weight: 700;
+                }
+                
+                .heading h1 span {
+                    color: red;
+                    padding-left: 16px;
                 }
                 
                 .footer-basic {
@@ -467,6 +488,8 @@
                     }
                 }
                 
+                @media (max-width:1379px) {}
+                
                 @media (max-width:1498px) {
                     .container {
                         padding: 0px 80px;
@@ -521,6 +544,9 @@
                     }
                     .title::before {
                         width: 100vh;
+                    }
+                    .skills .skills-content .right img {
+                        width: 50%;
                     }
                 }
                 
