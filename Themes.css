@@ -1,5 +1,6 @@
 .section-dark {
     background-color: #020303;
+    /* position: absolute; */
 }
 
 .themes {
@@ -18,6 +19,7 @@
     align-items: center;
     max-width: 1830px;
     flex-wrap: wrap;
+    background: #000;
 }
 
 .container-themes .themes-card {
@@ -81,6 +83,15 @@
     color: #777;
     z-index: 1;
     transition: 0.5s;
+}
+
+@media screen and (max-width: 582px) {
+    .themes {
+        width: 113vh;
+    }
+    .heading {
+        margin-left: 169px;
+    }
 }
 
 @media screen and (max-width: 426px) {
