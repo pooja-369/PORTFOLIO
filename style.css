@@ -582,3 +582,33 @@
                         width: 183%;
                     }
                 }
+                
+                @media (max-width: 440px) {
+                    .home,
+                    .about,
+                    .skills,
+                    .expertise,
+                    .footer-basic {
+                        width: 210%;
+                    }
+                }
+                
+                @media (max-width: 375px) {
+                    .home,
+                    .about,
+                    .skills,
+                    .expertise,
+                    .footer-basic {
+                        width: 235%;
+                    }
+                }
+                
+                @media (max-width: 414px) {
+                    .home,
+                    .about,
+                    .skills,
+                    .expertise,
+                    .footer-basic {
+                        width: 243%;
+                    }
+                }
